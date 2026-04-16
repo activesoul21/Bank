@@ -1,0 +1,465 @@
+/* MAIN SECTION */
+.text{
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: 1.1;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 2.5rem;
+    animation: fadeUp 0.6s ease both;
+    span{
+        color: gold;
+    }
+}
+.text4{
+    color: #6688b8;
+    font-size: 16px;
+    max-width: 500px;
+    line-height: 2.0;
+    margin-bottom: 2.1rem;
+    font-weight: 300;
+    margin-right: 60px;
+    padding-left: 5rem;
+}
+/* SERVICE SECTION */
+.section-sub{
+    color: #b89831;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.3rem;
+    margin-top: 3rem;
+}
+.section-eyebrow1{
+    color: #b89831;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.3rem;
+    margin-top: 3px;
+    span{
+        color: white;
+    }
+}
+.section-heading1{
+    color: #5a5959;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    margin-top: 2px;
+}
+/* ACCOUNT SECTION */
+.accounts-grid{
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+.account-card{
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 2.4rem 2rem;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+.account-icon{
+    width: 52px; 
+    height: 52px;
+    border-radius: 14px;
+    background: rgba(212,175,55,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(221, 176, 63);
+    margin-bottom: 1.4rem;
+    transition: background 0.2s;
+}
+.account-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: gold;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+.account-card:hover::before { 
+    transform: scaleX(1); 
+}
+.account-card:hover {
+    border-color: rgba(212,175,55,0.25);
+    transform: translateY(-5px);
+}
+.account-card.featured {
+    border-color: rgba(212,175,55,0.3);
+    background: rgba(212,175,55,0.05);
+}
+.account-card.featured::before { 
+    transform: scaleX(1); 
+}
+.featured-badge {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: rgb(190, 170, 54);
+    color: darkblue;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+ .account-card h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    margin-right: 3.1rem;
+}
+.account-card p {
+    font-size: 11px;
+    color: dimgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.65;
+    font-weight: 300;
+    margin-bottom: 1.0rem;
+    margin-right: 3rem;
+}
+.account-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1.8rem;
+}
+.account-features li{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 12px;
+    color: rgba(37, 133, 211, 0.363);
+}
+.account-features li i {
+    color: goldenrod;
+    font-size: 11px;
+}
+.card-cta{
+    display: block;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgba(212,175,55,0.3);
+    color: gold;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+}
+.card-cta:hover { 
+    background: goldenrod; 
+    color: rgba(10, 5, 31, 0.171) white; 
+}
+.account-card.featured .card-cta {
+    background: goldenrod;
+    color: rgb(9, 9, 29);
+    border-color: rgb(167, 150, 56);
+}
+.account-card.featured .card-cta:hover { 
+    background: rgb(230, 206, 71); 
+}
+/* Loan Section */
+.section-eyebrow2{
+    font-size: 12px;
+    margin-bottom: -3px;
+    color: #b89831;
+    font-weight: 200;
+    margin-top: 4rem;
+}
+.section-heading2{
+    font-size: 31px;
+    margin-top: 4px;
+    margin-bottom: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1.2px;
+    color: aliceblue;
+    span{
+        color: #b89831;
+    }
+}
+.section-sub2{
+    font-size: 21px;
+    color: #5a5959;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: -1.4rem;
+}
+.loans-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+.loan-card {
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    padding: 2rem 1.8rem;
+    width: 220px;
+    text-align: left;
+    transition: border-color 0.25s, transform 0.25s, background 0.25s;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+.loan-card:hover {
+    border-color: rgba(212,175,55,0.3);
+    background: rgba(212,175,55,0.04);
+    transform: translateY(-4px);
+}
+.loan-icon {
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    background: rgba(212,175,55,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: gold;
+    margin-bottom: 1.2rem; 
+}
+.loan-card:hover .loan-icon{
+    letter-spacing: 2.5px;
+}
+.loan-card h3 { 
+    font-size: 15px; 
+    font-weight: 500; 
+    color: white; 
+    margin-bottom: 0.4rem; 
+}
+.loan-card p  { 
+    font-size: 13px; 
+    color: rgb(228, 168, 58); 
+    line-height: 1.65; 
+    font-weight: 300;
+    margin-bottom: 1rem; 
+}
+.loan-rate {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: gold;
+    font-weight: 600;
+}
+.loan-rate-label {
+    font-size: 10px;
+    color: rgba(212, 209, 22, 0.3);
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+.loan-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    color: gold;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: letter-spacing 0.2s;
+}
+.loan-card:hover .loan-link { 
+    letter-spacing: 2.5px; 
+}
+/* CARDS */
+.cards-section{
+    margin-top: 6rem;
+}
+.section-sub{
+    margin-top: 6px;
+    color: #6688b8;
+}
+.section-eyebrow1{
+    font-size: 13px;
+    color: #6688b8;
+}
+.debit-credit-grid {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    max-width: 860px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+.bank-card-visual {
+    width: 300px;
+    height: 180px;
+    margin-top: 1rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0f2454 0%, #1c3779 100%);
+    border: 1px solid rgba(212,175,55,0.25);
+    padding: 1.6rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.bank-card-visual.gold-card {
+    background: linear-gradient(135deg, #3a2800 0%, #6b4c00 50%, #3a2800 100%);
+    border-color: rgba(212,175,55,0.5);
+}
+.bank-card-visual::before {
+    content: '';
+    position: absolute;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.06);
+    top: -60px;
+    right: -100px;
+}
+.card-chip {
+    width: 36px; height: 26px;
+    background: linear-gradient(135deg, #c8a84b, #f0d060);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.card-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+}
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.card-holder { 
+    font-size: 11px; 
+    color: rgba(255,255,255,0.5); 
+    letter-spacing: 1px; 
+}
+.card-holder strong { 
+    display: block; 
+    color: white; 
+    font-size: 13px; 
+    font-weight: 500; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2px; 
+}
+.card-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: gold;
+    letter-spacing: 1px;
+}
+.card-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 380px;
+    gap: 16px;
+}
+.card-info h3  {
+    margin-left: 12px;
+    margin-top: 3rem;
+    margin-bottom: -0.10rem;
+    color: white;
+    span{
+        color: #b89831;
+    } 
+}
+.card-info p {
+    font-size: 19px;
+    color: grey;
+    line-height: 1.65;
+    font-weight: 300;
+    margin-right: 82px;
+    margin-bottom: -0.10rem;
+}
+.card-perks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.8rem;
+}
+.card-perks li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: gray;
+}
+.card-perks li i { 
+    color: gold; 
+    font-size: 12px; 
+    width: 16px; 
+}
+.btn-gold{
+    text-decoration: none;
+    background: goldenrod;
+    color: rgb(76, 76, 95);
+    border: none;
+    padding: 14px 32px;
+    margin-bottom: 3rem;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-family: 'Outfit', sans-serif;
+    transition: background ease-in 0.2s;
+}
+.btn-gold:hover{
+    color: #1c3779;
+}
+/*  CTA BANNER*/
+.cta-banner {
+    background: #1c3779;
+    padding: 8rem 2rem;
+    width: 100%;
+    min-height: 67vh;
+    text-align: center;
+    border-top: 1px solid rgba(212,175,55,0.1);
+    border-bottom: 1px solid rgba(212,175,55,0.1);
+}
+.cta-banner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+.cta-banner h2 span { 
+    color: gold; 
+}
+.cta-banner p { 
+    color: gray; 
+    font-size: 19px; 
+    margin-bottom: 2.2rem; 
+    font-weight: 300; 
+}
+.btn{
+    text-decoration: none;
+}
+.btns{
+    text-decoration: none;
+}

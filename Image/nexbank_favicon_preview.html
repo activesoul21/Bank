@@ -1,0 +1,97 @@
+
+<div style="display:flex; align-items:center; justify-content:center; gap:48px; padding: 3rem 2rem; flex-wrap:wrap;">
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="120" height="120" id="fav1">
+      <defs>
+        <style>
+          #fav1 .bg { fill: #0f2454; }
+          #fav1 .arc { fill: none; stroke: #D4AF37; stroke-width: 2.2; stroke-linecap: round; }
+          #fav1 .n-letter { fill: #D4AF37; }
+          #fav1 .ring-outer { transform-origin: 16px 16px; animation: spinIn 1.4s cubic-bezier(0.22,1,0.36,1) forwards; }
+          #fav1 .ring-inner { transform-origin: 16px 16px; animation: spinInRev 1.6s cubic-bezier(0.22,1,0.36,1) 0.1s forwards; }
+          #fav1 .n-group { transform-origin: 16px 16px; animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.6s both; }
+          #fav1 .gold-dot { transform-origin: 16px 26px; animation: pulse 2s ease-in-out 1.4s infinite; }
+          @keyframes spinIn { from{transform:rotate(-270deg);opacity:0} to{transform:rotate(0);opacity:1} }
+          @keyframes spinInRev { from{transform:rotate(270deg);opacity:0} to{transform:rotate(0);opacity:1} }
+          @keyframes popIn { from{transform:scale(0);opacity:0} to{transform:scale(1);opacity:1} }
+          @keyframes pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.6);opacity:0.4} }
+        </style>
+      </defs>
+      <rect class="bg" x="0" y="0" width="32" height="32" rx="7"/>
+      <g class="ring-outer">
+        <circle class="arc" cx="16" cy="16" r="13" stroke-dasharray="50 32"/>
+      </g>
+      <g class="ring-inner">
+        <circle class="arc" cx="16" cy="16" r="10" stroke="#D4AF37" stroke-opacity="0.35" stroke-dasharray="30 33" stroke-dashoffset="10" stroke-width="1"/>
+      </g>
+      <g class="n-group">
+        <path class="n-letter" d="M10 22 L10 10 L13 10 L20 19 L20 10 L22 10 L22 22 L19 22 L12 13 L12 22 Z"/>
+      </g>
+      <circle class="gold-dot" cx="16" cy="26" r="1.4" fill="#D4AF37"/>
+    </svg>
+    <span style="font-size:12px;color:var(--color-text-secondary);letter-spacing:1px;">120px preview</span>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" id="fav2">
+      <defs>
+        <style>
+          #fav2 .bg{fill:#0f2454}
+          #fav2 .arc{fill:none;stroke:#D4AF37;stroke-width:2.2;stroke-linecap:round}
+          #fav2 .ring-outer{transform-origin:16px 16px;animation:spinIn 1.4s cubic-bezier(0.22,1,0.36,1) forwards}
+          #fav2 .ring-inner{transform-origin:16px 16px;animation:spinInRev 1.6s cubic-bezier(0.22,1,0.36,1) 0.1s forwards}
+          #fav2 .n-group{transform-origin:16px 16px;animation:popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.6s both}
+          #fav2 .gold-dot{transform-origin:16px 26px;animation:pulse 2s ease-in-out 1.4s infinite}
+        </style>
+      </defs>
+      <rect class="bg" x="0" y="0" width="32" height="32" rx="7"/>
+      <g class="ring-outer"><circle class="arc" cx="16" cy="16" r="13" stroke-dasharray="50 32"/></g>
+      <g class="ring-inner"><circle class="arc" cx="16" cy="16" r="10" stroke="#D4AF37" stroke-opacity="0.35" stroke-dasharray="30 33" stroke-dashoffset="10" stroke-width="1"/></g>
+      <g class="n-group"><path fill="#D4AF37" d="M10 22 L10 10 L13 10 L20 19 L20 10 L22 10 L22 22 L19 22 L12 13 L12 22 Z"/></g>
+      <circle class="gold-dot" cx="16" cy="26" r="1.4" fill="#D4AF37"/>
+    </svg>
+    <span style="font-size:12px;color:var(--color-text-secondary);letter-spacing:1px;">64px</span>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" id="fav3">
+      <defs>
+        <style>
+          #fav3 .bg{fill:#0f2454}
+          #fav3 .arc{fill:none;stroke:#D4AF37;stroke-width:2.2;stroke-linecap:round}
+          #fav3 .ring-outer{transform-origin:16px 16px;animation:spinIn 1.4s cubic-bezier(0.22,1,0.36,1) forwards}
+          #fav3 .ring-inner{transform-origin:16px 16px;animation:spinInRev 1.6s cubic-bezier(0.22,1,0.36,1) 0.1s forwards}
+          #fav3 .n-group{transform-origin:16px 16px;animation:popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.6s both}
+          #fav3 .gold-dot{transform-origin:16px 26px;animation:pulse 2s ease-in-out 1.4s infinite}
+        </style>
+      </defs>
+      <rect class="bg" x="0" y="0" width="32" height="32" rx="7"/>
+      <g class="ring-outer"><circle class="arc" cx="16" cy="16" r="13" stroke-dasharray="50 32"/></g>
+      <g class="ring-inner"><circle class="arc" cx="16" cy="16" r="10" stroke="#D4AF37" stroke-opacity="0.35" stroke-dasharray="30 33" stroke-dashoffset="10" stroke-width="1"/></g>
+      <g class="n-group"><path fill="#D4AF37" d="M10 22 L10 10 L13 10 L20 19 L20 10 L22 10 L22 22 L19 22 L12 13 L12 22 Z"/></g>
+      <circle class="gold-dot" cx="16" cy="26" r="1.4" fill="#D4AF37"/>
+    </svg>
+    <span style="font-size:12px;color:var(--color-text-secondary);letter-spacing:1px;">32px (real size)</span>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+    <div style="background:#f0f0f0;padding:8px 16px;border-radius:8px;display:flex;align-items:center;gap:8px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16">
+        <rect fill="#0f2454" x="0" y="0" width="32" height="32" rx="7"/>
+        <path fill="#D4AF37" d="M10 22 L10 10 L13 10 L20 19 L20 10 L22 10 L22 22 L19 22 L12 13 L12 22 Z"/>
+      </svg>
+      <span style="font-size:13px;color:#333;font-family:sans-serif;">NexBank — Trusted. Secure.</span>
+    </div>
+    <span style="font-size:12px;color:var(--color-text-secondary);letter-spacing:1px;">browser tab view</span>
+  </div>
+
+</div>
+
+<div style="background:var(--color-background-secondary);border-radius:12px;padding:1.5rem 2rem;margin:0 2rem 2rem;border:0.5px solid var(--color-border-tertiary);">
+  <p style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:0.8rem;">How to use it in your HTML</p>
+  <code style="font-size:12px;color:var(--color-text-secondary);font-family:monospace;line-height:1.9;display:block;">
+    &lt;!-- Put this inside your &lt;head&gt; tag --&gt;<br>
+    &lt;link rel="icon" type="image/svg+xml" href="favicon.svg"&gt;
+  </code>
+</div>
