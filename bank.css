@@ -22,12 +22,13 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    flex-wrap: wrap;
 }
 /* MAIN NAV */
 .mainnav{
-    flex: 1 1 19rem;
+    flex: 2 2 9rem;
     display: flex;
-    gap: 11px;
+    gap: 32px;
     padding: 0;
     list-style: none;
     align-items: center;
